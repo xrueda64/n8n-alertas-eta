@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:22
 
 # Instalar OpenVPN y herramientas necesarias
 RUN apt-get update && apt-get install -y \
@@ -32,3 +32,4 @@ exec n8n start\n\
 EXPOSE 5678
 
 CMD ["/start.sh"]
+
